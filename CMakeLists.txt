@@ -5,7 +5,7 @@ if(IDF_TARGET)
    idf_component_register(SRCS "lib/lcd1602.c" "lib/esp-idf.c"
                           INCLUDE_DIRS "include"
                           PRIV_INCLUDE_DIRS "lib" "include/lcd1602"
-                          PRIV_REQUIRES "driver" "esp_timer")
+                          PRIV_REQUIRES "driver" "esp_timer" "esp_driver_i2c")
    return()
 endif()
 
